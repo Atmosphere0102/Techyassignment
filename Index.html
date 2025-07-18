@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EnerGize - Fitness App</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EnerGize - Fitness App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-  <header>
+    <header>
     <div class="container nav-container">
-      <div class="logo">
-        <span class="icon">⚡</span><strong>Ener</strong><span>Gize</span>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="login-btn"><span class="icon">👤</span> Log In</a>
+        <div class="logo">
+        <img src="images/logo.png" alt="logo">
     </div>
-  </header>
+        <nav class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="login-btn"><span class="icon"><i class="fas fa-user"></i></span> Log In</a>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Transform Your Fitness Journey. Start Today!</h1>
-        <p>Track workouts, monitor progress, and achieve your goals with our all-in-one fitness app.</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn primary">Get Started</a>
-          <a href="#" class="btn secondary">🔀 Book a Demo</a>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <span class="close-btn" id="closeMenu">&times;</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="hero-images">
-        <img src="https://via.placeholder.com/300x200?text=Workout+Chart" alt="Workout Chart" class="main-image">
-        <div class="side-images">
-          <img src="https://via.placeholder.com/100x150?text=Trainer" alt="Trainer" class="trainer-img">
-          <div class="team-call">
-            <p><strong>Team call</strong><br>You've been invited to a virtual meeting by John<br><span>Jan 17 at 9AM</span></p>
-            <button>Join</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+    </header>
+
+    <!-- Hero container section -->
+    <section class="hero">
+    <div class="container hero-container">
+        <div class="hero-text text-xxl">
+            <h1>Transform Your Fitness Journey. Start Today!</h1>
+            <p>Track workouts, monitor progress, and achieve your goals<br> with our all-in-one fitness app.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn primary">Get Started</a>
+                <a href="#" class="btn secondary"><i class="fas fa-dumbbell"></i> Book a Demo</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="how-it-works">
+        <div class="container how-container">
+            <h2>Discover how our app works and get fit in no time</h2>
+            <div class="video-wrapper">
+            <!-- You can replace this entire <div> with a real <iframe> or <video> later -->
+            <div class="video-thumbnail">
+                <a href="#"><img src="images/video-preview.png" alt="Video preview"></a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container testimonials-container">
+            <h2>Hear from our satisfied users who transformed their lives.</h2>
+            <div class="testimonial-cards">
+            <div class="card">
+                <p>“I’ve lost 10 pounds in just a month! This app keeps me motivated and on track with my fitness goals.”</p>
+            <div class="author">
+                <strong>Alice Johnson</strong><br />
+                <span>Health Coach</span>
+            </div>
+            </div>
+            <div class="card">
+                <p>“The workout plans are easy to follow, and the progress tracking feature is incredibly helpful. I feel stronger every day!”</p>
+                <div class="author">
+                    <strong>Mark Thompson</strong><br />
+                    <span>Personal Trainer</span>
+                </div>
+            </div>
+            <div class="card">
+                <p>“This app has changed my fitness routine completely. I love the community support and challenges!”</p>
+                <div class="author">
+                    <strong>Sarah Parker</strong><br />
+                    <span>Fitness Enthusiast</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+        <script src="script.js"></script>
 </body>
 </html>
