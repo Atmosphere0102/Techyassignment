@@ -248,6 +248,204 @@ btn {
 
 /* Testimonial styling section End */
 
+/* Pricing Styling start */
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.text-center {
+  text-align: center;
+}
+.pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+.pricing .pricing-card-subheading {
+  margin-bottom: 30px;
+}
+.pricing .pricing-card-price {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.pricing ul {
+  margin: 30px 0;
+}
+ul {
+  list-style: none;
+}
+.pricing ul li {
+  margin-bottom: 20px;
+  
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+.pricing .pricing-footer {
+  margin: 30px 0;
+}
+.text-center {
+  text-align: center;
+}
+/* Pricing Styling End */
+
+/* FAQ Section Styling start */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+}
+
+.faq .container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.faq-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.faq-tabs .tab {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.faq-tabs .tab.active,
+.faq-tabs .tab:hover {
+  background-color: #4f86f7;
+  color: #fff;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* FAQ Section Styling End */
+
+/* Footer Section Start */
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+.footer {
+  padding: 40px 0;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-logo img {
+  width: 200px;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+.footer ul li {
+  line-height: 2.5;
+}
+.footer a{
+    color: #ccc;
+    text-decoration: none;
+}
+/* Footer Section End  */
+
 /* Responsiveness start */
 .hamburger {
   display: none;
@@ -289,7 +487,7 @@ btn {
   cursor: pointer;
 }
 
-/* mobile Responsive styles */
+/* mobile Responsive Mediaquery styles */
 @media (max-width: 768px) {
   .nav-links,
   .login-btn {
@@ -319,6 +517,7 @@ btn {
     height: 50px;
   }
   /* video section End*/
+
   /* Testimonial Start */
   .testimonial-cards {
     flex-direction: column;
@@ -329,6 +528,31 @@ btn {
     max-width: 90%;
   }
   /* Testimonial End */
+
+  /* Pricing Section Start */
+  .pricing .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .container-sm {
+    max-width: 100%;
+    margin: 50 auto;
+    padding:auto;
+  }
+  /* Pricing Section End */
+}
+
+@media (max-width: 600px) {
+  .faq .container {
+    padding: 30px 16px;
+  }
+
+  .faq-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Show menu */
