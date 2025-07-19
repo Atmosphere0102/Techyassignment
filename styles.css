@@ -220,7 +220,7 @@ btn {
   color: #111;
   padding: 30px 30px;
   border-radius: 12px;
-  max-width: 350px;
+  max-width: 330px;
   width: 100%;
   text-align: left;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -542,6 +542,12 @@ ul {
     padding:auto;
   }
   /* Pricing Section End */
+
+  /* Footer Text start */
+  .footer-text{
+    font-size: 15px;
+  }
+  /* Fiiter Test End */
 }
 
 @media (max-width: 600px) {
@@ -558,4 +564,10 @@ ul {
 /* Show menu */
 .mobile-menu.show {
   right: 0;
+
+    /* Footer Text start */
+    .footer-text{
+      font-size: 10px;
+    }
+    /* Fiiter Test End */
 }
